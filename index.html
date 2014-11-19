@@ -8,10 +8,7 @@
 
 <script>
 function myFunction() {
-    document.getElementById("test").innerHTML = "";
-}
-
-var button = document.querySelector('.button');
+   var button = document.querySelector('.button');
 button.addEventListener('click', function(event) {
     var target = document.querySelector(button.getAttribute('data-target'));
     if (target.style.display == "none") {
@@ -21,7 +18,10 @@ button.addEventListener('click', function(event) {
         target.style.display = "none";
         button.innerHTML = button.getAttribute('data-hidden-text');
     }
-});
+}
+}
+
+
 </script>
 
 </body>
